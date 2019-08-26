@@ -8,7 +8,7 @@ from datetime import date
 # and determine how many days until that day
 ###################################################
 def check_upcoming():
-    date_file = open("apptfile.txt",'r')
+    date_file = open("../apptfile.txt",'r')
     x = datetime.datetime.now()
     print(x.strftime("%m"))
     print("today: %s %s %s" % (x.month,x.day,x.year))
@@ -36,7 +36,7 @@ def check_upcoming():
 # MMDDYYYY <description>
 ###################################################
 def make_entry():
-    date_file = open("apptfile.txt",'a')
+    date_file = open("../apptfile.txt",'a')
     #print('{:%Y-%m-%d %H:%M}'.format(datetime(2019,8,22,8,12)))
     x = datetime.datetime.now()
     print("today: %s %s %s" % (x.month,x.day,x.year))
